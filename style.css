@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  z-index: 1;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: white !important;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: rgb(239, 109, 86) !important;
+}
+
+.btn-danger {
+  background-color: rgb(201, 32, 32);
+  color: white;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: white;
+  color: rgb(201, 32, 32);
+}
+
+header .fixed-top.navbar {
+  z-index: 999 !important;
+  box-shadow: 0px 5px 17px 8px #6f6565;
+  background-color: black;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.slider {
+  z-index: 1;
+  margin-top: 75px;
+}
+
+.home-banner {
+  width: 100%;
+  min-height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: 90% center;
+  position: relative;
+}
+
+.home-banner-1 {
+  background-image: url("images/slide1.jpg");
+}
+
+.home-banner-2 {
+  background-image: url("images/slide2.jpg");
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: white; /* Set the color of the control buttons */
+}
+
+.home-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-180%, -50%);
+}
+
+.home-text h2,
+h5,
+a {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.carousel-indicators [data-bs-target] {
+  height: 4px;
+  width: 52px;
+  background-color: #cd3232 !important;
+}
+
+.home-text h2 {
+  font-size: 5rem;
+}
+
+.offer-1 .btn {
+  margin: 0 auto; /* Align the button to the bottom of the container */
+  /* Align the button to the top of the container */
+}
+
+
+
+.offers a{
+    position: relative;
+ 
+}
+
+.offers a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0,0.4);
+    z-index: 2;
+
+}
+
+
+.offer-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    font-weight: bolder;
+    color: white;
+}
+
+.offer-info p:nth-child(1){
+    font-size: 2.5rem;
+}
+
+.offers.flex-container {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+}
+
+.offers.flex-container .offer-1 {
+  width: 30% !important;
+}
+
+
